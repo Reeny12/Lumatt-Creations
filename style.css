@@ -1,0 +1,91 @@
+body{
+    background-color:white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.headerImage{
+    background-image: url('images/sewingRoom.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.headerImage h1{
+    padding-left: 20px;
+    padding-bottom: 250px;
+}
+.headerImage nav{
+    position: absolute;
+    padding: 20px;
+    top: 20px;
+    right: 20px;
+}
+.headerImage nav a{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    padding: 30px;  
+}
+.headerImage a:hover{
+    color: wheat;
+}
+h1{
+      font-family: 'Dancing Script', cursive;
+      font-size: 4rem;
+      font-weight: bold;
+}
+div{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+img{
+    border-radius: 20px;
+    flex-shrink: 1;
+}
+
+.product{
+    display: block;
+    margin: 50px;
+    padding-left: 20px;
+    align-content: center;
+    background-color: rgb(255, 218, 224);
+    border-radius: 20px;
+}
+
+h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+}
+
+.price{
+  font-weight: bold;
+  margin-top: 5px;
+}
+.footer{
+    display: flex;
+    background-color: rgb(255, 218, 224);
+    border-radius: 20px;
+}
+#footer1{
+display: block;
+}
+#footer1 ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+#footer1 h3{
+    padding-left: 20px;
+}
+#footer1 p{
+    padding-left: 20px;
+}
+#footer2{
+    display: block;
+}
