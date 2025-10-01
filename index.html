@@ -9,7 +9,8 @@
 <body>
     <div class="header">
         <h1>Lumatt Creations</h1>
-        <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <nav id="navLinks">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contacts.html">Contacts</a>
@@ -17,11 +18,14 @@
     </div>
     <div class="headerImage">
         <h3>Traditional Clothing</h3>
+        <a href="#dress"><button>Shop Now</button></a>
     </div>
     <div>
-        <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A amet laborum autem quae doloribus, iste eius magni nisi totam eaque vero. Unde ex molestias, delectus repellendus debitis nisi quis eaque?</h4>
+        <h4>View some of our beautifully hand crafted traditional clothes. Each piece tells a story of heritage, elegance, and timeless craftsmanship. Clients select their attire by sending an inspiration picture, then share any custom changes they'd like to make,
+            from adjusting the design to choosing a different fabric. Every outfit is made to reflect your unique style and occasion.
+        </h4>
     </div>
-    <div class="product">
+    <div class="product" id="dress">
         <h3>Elegant Traditional dress</h3>
         <img src="images/WhatsApp Image 2025-08-06 at 7.10.17 PM.jpeg" width="250" height="250">
         <p class="description">Handcrafted with premium fabric, perfect for weddings and cultural events.</p>
@@ -36,6 +40,10 @@
         <a href="blueDress.html">
         <p>More blue dresses</p>
         </a>
+    </div>
+    <div class="order">
+        <h3>How to place an order</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nemo ducimus reiciendis inventore, possimus maiores, corporis optio totam velit in perferendis distinctio commodi, atque exercitationem quod. Omnis nobis molestias dolor!</p>
     </div>
     <div class="footer">
         <div id="footer1">
@@ -54,7 +62,20 @@
                 <li>Terms Of Service</li>
             </ul>
         </div>
+        <div id="footer3">
+            <h4>Measurements</h4>
+            <ul>
+                <li>Virtual Measurements Guideline</li>
+                <li>In person Measurements</li>
+            </ul>
+        </div>
     </div>
     
+    <script>
+        function toggleMenu(){
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
