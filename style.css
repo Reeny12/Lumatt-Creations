@@ -89,39 +89,80 @@ h3{
 .order{
     display: block;
 }
-.footer{
-    display: flex;
-    background-color: rgb(255, 218, 224);
-    border-radius: 20px;
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(255, 218, 224);
+  border-radius: 20px;
+  padding: 30px 20px;
+}
+
+.footer-section {
+  display: block;
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.footer-section p {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
 }
 #footer1{
     display: block;
 }
-#footer1 ul{
-    list-style: none;
-    display: flex;
-    gap: 50px;
-}
-#footer1 h3{
-    padding-left: 20px;
-}
-#footer1 p{
-    padding-left: 20px;
+#footer1 ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
 }
 
-#footer2{
-    display: block;
-}
-#footer2 ul{
-    list-style: none;
+#footer1 ul li {
+  list-style: none;
 }
 
-#footer3{
-    display: block;
+#footer1 img{
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-#footer3 ul{
-    list-style: none;
+
+#footer1 img:hover{
+  transform: scale(1.2) translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
 }
+
+.footer-bottom {
+  padding-left: 500px;
+  padding-top: 15px;
+  font-size: 0.9em;
+  color: black;
+}
+.footer-section a{
+  color: black;
+  text-decoration: none;
+}
+
+.footer-section a:hover{
+  color: palevioletred;
+}
+
 
 button {
   margin-top: 10px;
@@ -135,7 +176,7 @@ button {
 }
 
 button:hover {
-  background-color: white;
+  background-color: black;
   color: palevioletred;
 }
 .menu-toggle {
