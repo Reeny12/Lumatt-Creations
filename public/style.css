@@ -210,4 +210,11 @@ button:hover {
     .footer{
         display: block;
     }
+    .footer-bottom{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
 }
